@@ -1,0 +1,13 @@
+{
+    "name": "cge",
+    "database": {
+        "name" : "jwt",
+        "username" : "profit",
+        "password" : "profit",
+        "host": "ASUS/SQL2014",
+        "port": 1433,
+        "dialect": "mssql",
+        "encrypt": false,
+        "storage": "path"
+    }
+}
