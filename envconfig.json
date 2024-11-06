@@ -1,7 +1,7 @@
 {
     "name": "cge",
     "database": {
-        "name" : "jwt",
+        "name" : "nodejwt",
         "username" : "profit",
         "password" : "profit",
         "host": "ASUS/SQL2014",

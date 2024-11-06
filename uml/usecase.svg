@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="427px" preserveAspectRatio="none" style="width:245px;height:427px;background:#FFFFFF;" version="1.1" viewBox="0 0 245 427" width="245px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <!--cluster AppNoteUpload-->
+        <g id="cluster_AppNoteUpload">
+            <rect fill="none" height="414" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="160" x="79" y="7"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="109" x="104.5" y="23.5332">AppNoteUpload</text>
+        </g>
+        <g id="elem_uc1">
+            <ellipse cx="158.9411" cy="58.9517" fill="#F1F1F1" rx="36.9411" ry="15.4517" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="140.9411" y="62.6802">Users</text>
+        </g>
+        <g id="elem_uc2">
+            <ellipse cx="158.758" cy="125.0364" fill="#F1F1F1" rx="54.258" ry="15.5364" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="125.758" y="129.553">Teachers</text>
+        </g>
+        <g id="elem_uc3">
+            <ellipse cx="158.8274" cy="190.994" fill="#F1F1F1" rx="49.8274" ry="15.494" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="129.1067" y="195.4484">Sections</text>
+        </g>
+        <g id="elem_uc4">
+            <ellipse cx="158.8032" cy="257.0087" fill="#F1F1F1" rx="51.3032" ry="15.5087" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="127.8032" y="261.5253">Students</text>
+        </g>
+        <g id="elem_uc5">
+            <ellipse cx="158.8274" cy="322.994" fill="#F1F1F1" rx="49.8274" ry="15.494" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="129.1067" y="327.4484">Subjects</text>
+        </g>
+        <g id="elem_uc6">
+            <ellipse cx="158.8631" cy="389.109" fill="#F1F1F1" rx="63.8631" ry="15.609" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="119.3631" y="393.6256">Evaluations</text>
+        </g>
+        <!--entity u-->
+        <g id="elem_u">
+            <ellipse cx="20.5" cy="193.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/>
+            <path d="M20.5,201.5 L20.5,228.5 M7.5,209.5 L33.5,209.5 M20.5,228.5 L7.5,243.5 M20.5,228.5 L33.5,243.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="6" y="259.5332">User</text>
+        </g>
+        <!--link u to uc1-->
+        <g id="link_u_uc1">
+            <path d="M27.29,184.95 C33.49,155.88 46.04,117.05 71,92 C85.37,77.58 100.8608,70.8609 118.7808,66.2309 " fill="none" id="u-to-uc1" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="124.59,64.73,114.8755,63.1086,119.749,65.9808,116.8768,70.8542,124.59,64.73" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link u to uc2-->
+        <g id="link_u_uc2">
+            <path d="M35.06,199.59 C43.78,185.78 56.23,169.11 71,158 C84.68,147.71 96.2568,142.1741 111.7968,137.0041 " fill="none" id="u-to-uc2" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="117.49,135.11,107.6875,134.1556,112.7457,136.6884,110.2129,141.7466,117.49,135.11" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link u to uc3-->
+        <g id="link_u_uc3">
+            <path d="M35.09,220.72 C54.51,216.02 85.1378,208.6089 113.3278,201.7989 " fill="none" id="u-to-uc3" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="119.16,200.39,109.4724,198.6152,114.2998,201.5641,111.3509,206.3915,119.16,200.39" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link u to uc4-->
+        <g id="link_u_uc4">
+            <path d="M35.09,227.28 C54.31,231.93 84.3783,239.1988 112.4383,245.9888 " fill="none" id="u-to-uc4" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="118.27,247.4,110.4632,241.3955,113.4103,246.224,108.5817,249.1711,118.27,247.4" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link u to uc5-->
+        <g id="link_u_uc5">
+            <path d="M35.06,248.41 C43.78,262.22 56.23,278.89 71,290 C85.2,300.68 97.5534,306.4266 113.5334,311.6166 " fill="none" id="u-to-uc5" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="119.24,313.47,111.9157,306.8855,114.4845,311.9255,109.4446,314.4943,119.24,313.47" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link u to uc6-->
+        <g id="link_u_uc6">
+            <path d="M27.29,263.05 C33.49,292.12 46.04,330.95 71,356 C81.6,366.64 90.321,371.916 104.341,376.856 " fill="none" id="u-to-uc6" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="110,378.85,102.8408,372.0864,105.2842,377.1884,100.1822,379.6317,110,378.85" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--SRC=[NSuz3i8m30NWFQUmkdUWVoCI0oiBxG5CQjgYAAaIXmLnTzgY1D9CJ_dqR2kwCx01EmqZGpzPaZmPBL2oiT0vie0El5Z_KG-Au3JF5yFKpSfW3oy1o_EE93g2R2suRAl8GqejeHn_MgHw_UuDMkwKVK-QWrOxzRV7KWzQftf-elBuFxmHR-4Xpu_RaI4LCPKnLJ7LCJKV]-->
+    </g>
+</svg>

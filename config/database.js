@@ -1,77 +1,29 @@
 
 import Sequelize from 'sequelize';
-import config from './environmentconfig.js';
+import config from './environment.js';
 
+import { MSSql } from './mssql.connection.js';
+import { MySql } from './mysql.connection.js';
+import { Postgres } from './postgres.connection.js';
+//import { SQLite } from './sqlite.connection.js';
 
-function getMSSql() {
-    const sequelize = new Sequelize(config.database.name, config.database.username, config.database.password, {
-        host: config.database.host,
-        port: config.database.port,
-        dialect: 'mssql',
-        dialectOptions: {
-            options: {
-                encrypt: config.database.encrypt
-            }
-        }
-    });
-    return sequelize;
-}
-
-function getMySql() {
-    const sequelize = new Sequelize(config.database.name, config.database.username, config.database.password, {
-        host: config.database.host,
-        port: config.database.port,
-        dialect: 'mysql',
-        dialectOptions: {
-            options: {
-                encrypt: config.database.encrypt
-            }
-        }
-    });
-    return sequelize;
-}
-
-function getPostgres() {
-    const sequelize = new Sequelize(config.database.name, config.database.username, config.database.password, {
-        host: config.database.host,
-        port: config.database.port,
-        dialect: 'postgres',
-        dialectOptions: {
-            options: {
-                encrypt: config.database.encrypt
-            }
-        }
-    });
-    return sequelize;
-}
-
-
-function getSQLite() {
-    const sequelize = new Sequelize({
-        dialect: 'sqlite',
-        storage: config.database.path
-    });
-    return sequelize;
-}
-
-
+var db;
 
 switch(config.database.dialect) {
-  case 'sqlite':
-    sequelize = getSQLite();
-    break;
   case 'mssql':
-    sequelize = getMSSql();
-    break;
-  case 'postgres':
-    sequelize = getPostgres();
+    db = MSSql;
     break;
   case 'mysql':
-    sequelize = getMySql();
+    db = MySql;
     break;
+  case 'postgres':
+    db = Postgres;
+    break;
+  //case 'sqlite':
+    //db = SQLite;
+    //break;
   default:
     console.error('Unable to connect to the database - HandlerDB');
 }
 
-
-export default sequelize;
+export default db;
