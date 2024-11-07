@@ -23,3 +23,126 @@
 2024-11-05 23:11:52 info:  Servidor ejecutándose en http://localhost:3000
 2024-11-05 23:12:33 info:  Servidor ejecutándose en http://localhost:3000
 2024-11-05 23:16:10 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 11:51:11 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 11:55:28 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 11:55:34 error:  Error fetching users: User :"pedro@gmail.com" is already registered
+2024-11-06 11:58:54 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 11:59:00 error:  Error: User :"pedro@gmail.com" is already registered
+2024-11-06 12:37:01 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:37:11 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:37:25 error:  Error: TypeError: userService.getById is not a function
+2024-11-06 12:38:02 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:38:12 error:  Error: User not found
+2024-11-06 12:40:10 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:41:10 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:41:35 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:41:38 error:  Error: User not found
+2024-11-06 12:41:52 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:42:57 error:  Error: TypeError: db.User is not a constructor
+2024-11-06 12:43:21 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:55:45 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:57:33 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 12:58:21 error:  Error: SequelizeUniqueConstraintError: Validation error
+2024-11-06 13:08:33 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:12:00 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:12:57 error:  Error: User not found
+2024-11-06 13:15:04 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:15:09 error:  Error: User not found
+2024-11-06 13:15:52 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:16:55 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:19:55 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:20:08 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:21:27 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 13:27:06 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 19:20:43 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 19:38:58 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 19:40:22 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 19:47:26 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 20:51:31 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 20:53:06 error:  Error: Error: WHERE parameter "username" has invalid "undefined" value
+2024-11-06 21:06:14 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:06:20 error:  Error: Error: WHERE parameter "username" has invalid "undefined" value
+2024-11-06 21:07:35 error:  Error: User :"" not found
+2024-11-06 21:09:06 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:09:10 info:  entrando en el comtrolador login
+2024-11-06 21:09:10 error:  Error: User :"" not found
+2024-11-06 21:12:29 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:12:31 info:  entrando en el comtrolador login
+2024-11-06 21:12:31 info:  param: undefined
+2024-11-06 21:12:31 info:  param: undefined
+2024-11-06 21:12:31 error:  Error: User :"" not found
+2024-11-06 21:22:18 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:22:26 info:  entrando en el comtrolador login
+2024-11-06 21:22:26 info:  param: undefined
+2024-11-06 21:22:26 info:  param: undefined
+2024-11-06 21:22:26 error:  Error: The parameters are empty or null
+2024-11-06 21:22:40 info:  entrando en el comtrolador login
+2024-11-06 21:22:40 info:  param: undefined
+2024-11-06 21:22:40 info:  param: undefined
+2024-11-06 21:22:40 error:  Error: The parameters are empty or null
+2024-11-06 21:22:47 info:  entrando en el comtrolador login
+2024-11-06 21:22:47 info:  param: undefined
+2024-11-06 21:22:47 info:  param: undefined
+2024-11-06 21:22:47 error:  Error: The parameters are empty or null
+2024-11-06 21:22:55 info:  entrando en el comtrolador login
+2024-11-06 21:22:55 info:  param: undefined
+2024-11-06 21:22:55 info:  param: undefined
+2024-11-06 21:22:55 error:  Error: The parameters are empty or null
+2024-11-06 21:23:21 info:  entrando en el comtrolador login
+2024-11-06 21:23:21 info:  param: undefined
+2024-11-06 21:23:21 info:  param: undefined
+2024-11-06 21:23:21 error:  Error: The parameters are empty or null
+2024-11-06 21:25:25 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:25:31 info:  entrando en el comtrolador login
+2024-11-06 21:25:31 info:  param: [object Object]
+2024-11-06 21:25:31 info:  param: undefined
+2024-11-06 21:25:31 error:  Error: The parameters are empty or null
+2024-11-06 21:26:21 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:26:22 info:  entrando en el comtrolador login
+2024-11-06 21:26:22 info:  param: undefined
+2024-11-06 21:26:22 info:  param: undefined
+2024-11-06 21:26:22 error:  Error: The parameters are empty or null
+2024-11-06 21:27:23 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:27:26 info:  entrando en el comtrolador login
+2024-11-06 21:27:26 info:  param: undefined
+2024-11-06 21:27:26 info:  param: undefined
+2024-11-06 21:27:26 error:  Error: The parameters are empty or null
+2024-11-06 21:29:43 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:29:46 info:  entrando en el comtrolador login
+2024-11-06 21:29:46 info:  param: undefined
+2024-11-06 21:29:46 info:  param: undefined
+2024-11-06 21:29:46 error:  Error: The parameters are empty or null
+2024-11-06 21:32:49 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:32:55 info:  entrando en el comtrolador login
+2024-11-06 21:32:55 info:  param: undefined
+2024-11-06 21:32:55 info:  param: undefined
+2024-11-06 21:32:55 error:  Error: The parameters are empty or null
+2024-11-06 21:33:27 info:  entrando en el comtrolador login
+2024-11-06 21:33:27 info:  param: undefined
+2024-11-06 21:33:27 info:  param: undefined
+2024-11-06 21:33:27 error:  Error: The parameters are empty or null
+2024-11-06 21:34:28 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:35:03 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:35:09 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:39:29 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:40:39 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:40:41 info:  datos [object Object]
+2024-11-06 21:41:27 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:41:30 info:  datos undefined
+2024-11-06 21:47:52 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:48:06 info:  datos undefined
+2024-11-06 21:49:02 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:49:05 info:  datos [object Object]
+2024-11-06 21:49:59 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:50:03 info:  datos [object Object]
+2024-11-06 21:50:43 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:51:08 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:51:13 info:  entrando en el comtrolador login
+2024-11-06 21:51:13 info:  param: undefined
+2024-11-06 21:51:13 info:  param: undefined
+2024-11-06 21:51:13 error:  Error: The parameters are empty or null
+2024-11-06 21:52:02 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-06 21:52:09 info:  entrando en el comtrolador login
+2024-11-06 21:52:09 info:  param: [object Object]
+2024-11-06 21:52:09 error:  Error: User :"Jose@gmail.com" not found
+2024-11-06 22:40:59 info:  Servidor ejecutándose en http://localhost:3000

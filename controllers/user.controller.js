@@ -8,26 +8,52 @@ export const get = async (req, res) => {
         const result = await userService.getAll();
         return res.json(result);      
     } catch (error) {
-        return res.status(500).send('Error fetching users');
-        logger.error(`Error fetching users: ${error}`);
+        logger.error(`Error: ${error}`);
+        return res.status(500).json({ message: "Error: " + error.message }); 
     }   
 };
 
 export const getById = async (req, res) => {
-    return res.send('Get By Id');
+    try {
+        const id = req.params.id;
+        //return res.json(req.params.id);
+        const result = await userService.getById(id);
+        return res.json(result);      
+    } catch (error) {
+        logger.error(`Error: ${error}`);
+        return res.status(500).json({ message: "Error: " + error.message }); 
+    }
 
 };
 
 export const insert = async (req, res) => {
-    const result = await create(req.body);
-    console.log(result);
-    return res.send('Insert');
+    try {
+        const result = await userService.create(req.body);
+        return res.json(result);      
+    } catch (error) {
+        logger.error(`Error: ${error}`);
+        return res.status(500).json({ message: "Error: " + error.message }); 
+    }
 };
 
 export const update = async (req, res) => {
-    return res.send('Update');
+    try {
+        const id = req.params.id;
+        const result = await userService.update(id, req.body);
+        return res.json(result);      
+    } catch (error) {
+        logger.error(`Error: ${error}`);
+        return res.status(500).json({ message: "Error: " +  error.message }); 
+    }
 };
 
 export const eliminate = async (req, res) => {
-    return res.send('Delete');
+    try {
+        const id = req.params.id; 
+        const result = await userService.eliminate(id);
+        return res.sendStatus(204).json({ message: "Was Delete" });      
+    } catch (error) {
+        logger.error(`Error: ${error}`);
+        return res.status(500).json({ message: "Error: " + error.message });  
+    }
 };

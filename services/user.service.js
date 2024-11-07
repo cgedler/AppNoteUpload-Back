@@ -9,35 +9,83 @@ export async function getAll() {
     return await User.findAll();
 }
 
+export async function getById(id) {
+    return await getOne(id);
+}
+
 export async function create(params) {
-    if (await db.User.findOne({ where: { username: params.username } })) {
+    if (await User.findOne({ where: { username: params.username } })) {
         throw 'User :"' + params.username + '" is already registered';
     }
-    const user = new db.User(params);
-    // hash password
-    
+    var password_crypt = '';
+    if (params.password) {
+        var salt = bcrypt.genSaltSync(10);
+        password_crypt = bcrypt.hashSync(params.password, salt);
+    }   
+    const user = new User(params);
+    user.password = password_crypt; 
     await user.save();
     return user;
 }
 
-export default { getAll, create };
+export async function update(id, params) {
+    const user_old = await getOne(id);
+    // validate
+    const usernameChanged = params.username && user_old.username !== params.username;
+    if (usernameChanged && await User.findOne({ where: { username: params.username } })) {
+        throw 'Username "' + params.username + '" is already taken';
+    }
+    var password_crypt = '';
+    if (params.password) {
+        var salt = bcrypt.genSaltSync(10);
+        password_crypt = bcrypt.hashSync(params.password, salt);
+    }
+    user_old.username = params.username;
+    user_old.name = params.name;
+    user_old.password = password_crypt;
+    user_old.role = params.role;
+    await user_old.save();
+    return user_old;
+}
 
-/*
-bcrypt.genSalt(10, function(err, salt) {
-    bcrypt.hash("B4c0/\/", salt, function(err, hash) {
-        // Store hash in your password DB.
+export async function eliminate(id) {
+    const user = await User.destroy({
+        where: {
+            id
+        }
     });
-});
+    if (!user) throw 'User not found';
+    return user;
+}
 
-// Load hash from your password DB.
-bcrypt.compare("B4c0/\/", hash, function(err, res) {
-    // res === true
-});
+async function getOne(id) {
+    const user = await User.findByPk(id);
+    if (!user) throw 'User not found';
+    return user;
+}
 
- var salt = bcrypt.genSaltSync(1);
-        var hash = bcrypt.hashSync("clave1234", salt);
-        console.log(hash);
- *
- *
- **/
+export async function login(params) {
+    if (await User.findOne({ where: { username: params.username } })) {
+        const user = await User.findOne({ where: { username: params.username } });
+        var password_crypt = '';
+        if (params.password) {
+            var salt = bcrypt.genSaltSync(10);
+            password_crypt = bcrypt.hashSync(params.password, salt);
+        } else {
+            throw 'Password is required';
+        }
+        if (password_crypt !== user.password) {
+            throw 'Invalid password';
+        } else {
+            return user;
+        }
+    } else {
+        throw 'User :"' + params.username + '" not found';
+    }
+}
+
+
+export default { getAll, getById, create, update, eliminate, login };
+
+
 
