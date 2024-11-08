@@ -15,7 +15,6 @@ export const login = async (req, res) => {
                 sub: usertoken.username
             }; 
             const token = await jwtoken.generateToken(user);
-            //logger.info(`token: ${token}`);
             return res.json({ token });
         } else {
             logger.error(`Error: The parameters are empty or null`);
