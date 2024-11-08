@@ -1,14 +1,15 @@
 
 
+import jwtoken from '../services/jwt.service.js';
 import { Router } from 'express';
 const router = Router();
 
 import { get, getById, insert, update, eliminate } from '../controllers/student.controller.js';
 
-router.get('/', get);
-router.get('/', getById);
-router.post('/', insert);
-router.put('/', update);
-router.delete('/', eliminate);
+router.get('/', jwtoken.ensureToken, (req, res) => { get; });
+router.get('/', jwtoken.ensureToken, (req, res) => { getById; });
+router.post('/', jwtoken.ensureToken, (req, res) => { insert; });
+router.put('/', jwtoken.ensureToken, (req, res) => { update; });
+router.delete('/', jwtoken.ensureToken, (req, res) => { eliminate; });
 
 export default router;

@@ -1,6 +1,7 @@
 
 
 import { Router } from 'express';
+import auth from './auth.routes.js';
 import user from './user.routes.js';
 import evaluation from './evaluation.routes.js';
 import section from './section.routes.js';
@@ -10,6 +11,7 @@ import teacher from './teacher.routes.js';
 
 const router = Router();
 
+router.use('/auth', auth);
 router.use('/user', user);
 router.use('/evaluation', evaluation);
 router.use('/section', section);

@@ -1,24 +1,22 @@
 
 import logger from '../middleware/logger.js'
 import userService from '../services/user.service.js';
+import jwtoken from '../services/jwt.service.js';
 
 export const login = async (req, res) => {
     try {
-        const data = req.body;
-        //console.log(data);
-  
         logger.info(`entrando en el comtrolador login`);
-        //logger.info(`param: ` + req.body);  // objeto
-        //
-//logger.info(`param: ` + req.params.password);
         const username = req.body.username;
         const password = req.body.password;
         if (validateParam(username) & validateParam(password)) {
-       
-            const result = await userService.login(req.body);
-            // preparar aqui el token
-            return res.json(result);
-            
+            const usertoken = await userService.login(req.body);
+            const user = { 
+                roles: usertoken.role,
+                sub: usertoken.username
+            }; 
+            const token = await jwtoken.generateToken(user);
+            //logger.info(`token: ${token}`);
+            return res.json({ token });
         } else {
             logger.error(`Error: The parameters are empty or null`);
             return res.status(400).json({ message: "Error: The parameters are empty or null"});

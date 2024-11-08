@@ -1,6 +1,8 @@
 
 import { DataTypes } from 'sequelize';
 import db from '../config/database.js';
+import Student from './student.model.js';
+import Teacher from './teacher.model.js';
 
 const Role = {
     ADMIN: "ADMIN",
@@ -27,6 +29,26 @@ const User = db.define('system.users', {
     role: {
         type: DataTypes.ENUM(Role.ADMIN, Role.USER)
     }
+});
+
+User.hasOne(Student, {
+    foreingKey: 'StudentId',
+    sourceKey: 'id'
+});
+
+Student.belongsTo(User, {
+    foreingKey: 'StudentId',
+    targetId: 'id'
+});
+
+User.hasOne(Teacher, {
+    foreingKey: 'TeacherId',
+    sourceKey: 'id'
+});
+
+Teacher.belongsTo(User, {
+    foreingKey: 'TeacherId',
+    targetId: 'id'
 });
 
 export default User;

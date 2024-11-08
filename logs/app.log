@@ -146,3 +146,69 @@
 2024-11-06 21:52:09 info:  param: [object Object]
 2024-11-06 21:52:09 error:  Error: User :"Jose@gmail.com" not found
 2024-11-06 22:40:59 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:25:03 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:25:22 info:  entrando en el comtrolador login
+2024-11-07 15:25:22 error:  Error: User :"Jose@gmail.com" not found
+2024-11-07 15:27:18 info:  entrando en el comtrolador login
+2024-11-07 15:27:18 error:  Error: Invalid password
+2024-11-07 15:27:52 info:  entrando en el comtrolador login
+2024-11-07 15:27:52 error:  Error: Invalid password
+2024-11-07 15:28:52 info:  entrando en el comtrolador login
+2024-11-07 15:28:52 error:  Error: Invalid password
+2024-11-07 15:30:01 info:  entrando en el comtrolador login
+2024-11-07 15:30:01 error:  Error: Invalid password
+2024-11-07 15:31:47 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:32:32 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:32:38 info:  entrando en el comtrolador login
+2024-11-07 15:32:38 info:  password: $2a$10$EDprq9eFsdkc4g2Pb4XfGuvsrPXZdyRUupBPBG7lNcfj8k1CvslWm
+2024-11-07 15:32:38 error:  Error: Invalid password
+2024-11-07 15:33:23 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:33:42 info:  password: $2a$10$jNAcSYQuOQ4xqnTE5c.CWu0Gdlxy0pKVmeGQo0TWrEC.uhu.Ge4d.
+2024-11-07 15:43:56 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:44:08 info:  entrando en el comtrolador login
+2024-11-07 15:45:39 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:45:42 info:  entrando en el comtrolador login
+2024-11-07 15:45:42 info:  user: [object SequelizeInstance:system.users]
+2024-11-07 15:46:19 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:46:22 info:  entrando en el comtrolador login
+2024-11-07 15:46:22 info:  user: maria@gmail.com
+2024-11-07 15:46:42 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:46:48 info:  entrando en el comtrolador login
+2024-11-07 15:46:48 info:  user: maria@gmail.com
+2024-11-07 15:46:48 info:  user: ADMIN
+2024-11-07 15:47:30 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:48:13 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:48:15 info:  entrando en el comtrolador login
+2024-11-07 15:48:15 info:  user: maria@gmail.com
+2024-11-07 15:48:15 info:  user: ADMIN
+2024-11-07 15:48:15 info:  userio: [object Object]
+2024-11-07 15:48:15 info:  token: [object Promise]
+2024-11-07 15:49:07 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 15:49:09 info:  entrando en el comtrolador login
+2024-11-07 15:49:09 info:  user: maria@gmail.com
+2024-11-07 15:49:09 info:  user: ADMIN
+2024-11-07 15:49:09 info:  userio: [object Object]
+2024-11-07 15:49:09 info:  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGVzIjoiQURNSU4iLCJzdWIiOiJtYXJpYUBnbWFpbC5jb20ifSwiaWF0IjoxNzMxMDA4OTQ5fQ.acxdANmqaGQyONDCNMfuGCVwgzx5cFGqBiirCcSYJbA
+2024-11-07 16:00:55 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 16:28:32 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 16:57:37 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 17:00:30 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 17:35:46 info:  entrando en el comtrolador login
+2024-11-07 17:35:46 info:  user: maria@gmail.com
+2024-11-07 17:35:46 info:  user: ADMIN
+2024-11-07 17:35:46 info:  userio: [object Object]
+2024-11-07 17:35:46 info:  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGVzIjoiQURNSU4iLCJzdWIiOiJtYXJpYUBnbWFpbC5jb20ifSwiaWF0IjoxNzMxMDE1MzQ2fQ.B1RSrssOyI__-xavgyegUAaqeB-CyNXEvfsaOYK_954
+2024-11-07 17:36:45 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 17:39:03 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 21:03:05 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 21:24:44 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 21:26:31 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 21:29:30 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 21:29:58 info:  entrando en el comtrolador login
+2024-11-07 21:29:58 info:  user: maria@gmail.com
+2024-11-07 21:29:58 info:  user: ADMIN
+2024-11-07 21:29:58 info:  userio: [object Object]
+2024-11-07 21:29:58 info:  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGVzIjoiQURNSU4iLCJzdWIiOiJtYXJpYUBnbWFpbC5jb20ifSwiaWF0IjoxNzMxMDI5Mzk4fQ.FGMxbj0xv3ne_SoffQS27TtsKmKK6n7ex-xVQWTNeGc
+2024-11-07 21:33:21 info:  Servidor ejecutándose en http://localhost:3000
+2024-11-07 21:33:26 error:  Error: User not found
+2024-11-07 21:53:45 info:  Servidor ejecutándose en http://localhost:3000

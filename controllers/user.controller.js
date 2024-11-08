@@ -1,4 +1,5 @@
 
+
 import logger from '../middleware/logger.js'
 import userService from '../services/user.service.js';
 
@@ -16,7 +17,6 @@ export const get = async (req, res) => {
 export const getById = async (req, res) => {
     try {
         const id = req.params.id;
-        //return res.json(req.params.id);
         const result = await userService.getById(id);
         return res.json(result);      
     } catch (error) {

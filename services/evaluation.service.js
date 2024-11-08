@@ -1,9 +1,8 @@
 
 
 import logger from '../middleware/logger.js'
-import bcrypt from 'bcryptjs';
 import db from '../config/database.js';
-import User from '../models/user.model.js';
+import Evaluation from '../models/evaluation.model.js';
 
 
 export async function getAll() {
@@ -65,21 +64,4 @@ async function getOne(id) {
     return user;
 }
 
-export async function login(params) {
-    if (await User.findOne({ where: { username: params.username } })) {
-        const user = await User.findOne({ where: { username: params.username } });
-        if (params.password) {
-            if (bcrypt.compare(params.password, user.password) ) {
-                return user;
-            } else {
-                throw 'Invalid password';
-            }
-        } else {
-            throw 'Password is required';
-        }
-    } else {
-        throw 'User :"' + params.username + '" not found';
-    }
-}
-
-export default { getAll, getById, create, update, eliminate, login };
+export default { getAll, getById, create, update, eliminate };

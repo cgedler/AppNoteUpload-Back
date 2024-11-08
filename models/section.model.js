@@ -1,6 +1,24 @@
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
- */
 
 
+import { DataTypes } from 'sequelize';
+import db from '../config/database.js';
+
+
+const Section = db.define('app.sections', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true
+    },
+    description: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    journey: {
+        type: DataTypes.INTEGER
+    },
+    quater: {
+        type: DataTypes.INTEGER
+    }
+});
+
+export default Section;
