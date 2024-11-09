@@ -1,3 +1,10 @@
+/**
+ * Main handler of all app routes 
+ * 
+ * @author Christopher Gedler <cgedler@gmail.com>
+ * @version 1.0
+ * @since Nov 8, 2024
+ */
 
 
 import { Router } from 'express';

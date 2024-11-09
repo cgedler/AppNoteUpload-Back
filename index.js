@@ -1,3 +1,10 @@
+/**
+ * Main App
+ * 
+ * @author Christopher Gedler <cgedler@gmail.com>
+ * @version 1.0
+ * @since Nov 8, 2024
+ */
 
 
 import express from 'express';
@@ -15,11 +22,13 @@ import Section from './models/section.model.js';
 import Student from './models/student.model.js';
 import Subject from './models/subject.model.js';
 import Teacher from './models/teacher.model.js';
-
+// Configuration
 const app = express();
 const port = 3000;
+// Middleware
 app.use(express.json());
 app.use(cors());
+// Routes
 app.use('/', routes);
 
 async function main() {
@@ -27,9 +36,6 @@ async function main() {
         await db.sync();  //{force:true}
         app.listen(port);
         logger.info(`Servidor ejecutándose en http://localhost:${port}`);
-        //logger.error(`Probando mensaje de error`);
-        //console.log('Server is listening on port', 3000);
-
     } catch (error) {
         logger.error(`Unable to connect to the database: ${error}`);
     }

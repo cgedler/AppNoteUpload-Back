@@ -1,3 +1,11 @@
+/**
+ * Connection class for MySql
+ * 
+ * @author Christopher Gedler <cgedler@gmail.com>
+ * @version 1.0
+ * @since Nov 8, 2024
+ */
+
 
 import Sequelize from 'sequelize';
 import config from './environment.js';

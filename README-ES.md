@@ -1,65 +1,46 @@
-# Descripci \\* ón del Proyecto
+# Descripci&#243;n del Proyecto
 
-Nombre del Proyecto: API de Gestión de Usuarios
+## Nombre del Proyecto: API de Gesti&#243;n de carga de notas (AppNoteUpload)
 
-Tecnologías Utilizadas:
+#### Tecnolog&#237;as Utilizadas:
 
-Node.js: Plataforma para construir la aplicación backend.
+- **Node.js:** Plataforma para construir la aplicaci&#243;n backend.
 
-Express: Framework para gestionar las rutas y middleware.
+- **Express:** Framework para gestionar las rutas y middleware.
 
-bcrypt: Biblioteca para cifrar contraseñas antes de almacenarlas en la base de datos.
+- **bcrypt:** Biblioteca para cifrar contrase&#241;as antes de almacenarlas en la base de datos.
 
-jsonwebtoken (JWT): Biblioteca para generar tokens de acceso, proporcionando autenticación segura.
+- **jsonwebtoken (JWT):** Biblioteca para generar tokens de acceso, proporcionando autenticaci&#243;n segura.
 
-Sequelize: ORM (Object-Relational Mapping) para interactuar con la base de datos.
+- **Sequelize:** ORM (Object-Relational Mapping) para interactuar con la base de datos.
 
-MySQL: Base de datos utilizada para almacenar la información de los usuarios y otros datos.
+- **MSSQL:** Base de datos utilizada para almacenar la informaci&#243;n de los usuarios y otros datos.
 
-Funcionalidades Principales
-Registro de Usuarios:
+## Funcionalidades Principales
 
-Los nuevos usuarios pueden registrarse proporcionando un nombre de usuario y contraseña.
+1. Registro de Usuarios:
 
-La contraseña se cifra utilizando bcrypt antes de almacenarse en la base de datos para mejorar la seguridad.
+- Los nuevos usuarios pueden registrarse proporcionando un nombre de usuario y contrase&#241;a.
 
-Autenticación de Usuarios:
+- La contrase&#241;a se cifra utilizando bcrypt antes de almacenarse en la base de datos para mejorar la seguridad.
 
-Los usuarios registrados pueden autenticarse proporcionando sus credenciales.
+2. Autenticaci&#243;n de Usuarios:
 
-Si las credenciales son válidas, se genera un token JWT que se devuelve al usuario.
+- Los usuarios registrados pueden autenticarse proporcionando sus credenciales.
 
-Este token se utiliza para autorizar el acceso a rutas protegidas en la aplicación frontend.
+- Si las credenciales son v&#225;lidas, se genera un token JWT que se devuelve al usuario.
 
-CRUD de Usuarios:
+- Este token se utiliza para autorizar el acceso a rutas protegidas en la aplicaci&#243;n frontend.
 
-Crear: Permite añadir nuevos usuarios a la base de datos.
+3. CRUD de Usuarios, Estudiantes, Profesores,Secciones, Asignaturas y Evaluaciones:
 
-Leer: Permite obtener información de los usuarios existentes.
+- **Crear:** Permite a&#241;adir nuevos datos a la base de datos.
 
-Actualizar: Permite modificar la información de los usuarios.
+- **Leer:** Permite obtener informaci&#243;n de los datos existentes.
 
-Eliminar: Permite borrar usuarios de la base de datos.
+- **Actualizar:** Permite modificar la informaci&#243;n de los datos.
+
+- **Eliminar:** Permite borrar informaci&#243;n de la base de datos.
 
 
-# Markdown for Netbeans ![Description Here](https://netbeans.apache.org/images/nblogo48x48.png)
-
-***
-
-## Description
-This plugin adds some additional features to Apache Netbeans Markdown Editor.
-- Preview
-- Split Window
-- Suggestion
-- Export to DOCX, PDF and HTML
-
-## Tables
-
-| Header 1 | Header 2 |  Header 3 |
-|----------|----------|-----------|
-|   Col 1  |   Col 2  |   Col 3   |
-
-## Checkboxes
-
-- [x] Option 1
-- [ ] Option 2
+Este proyecto representa una API de backend robusta que maneja la gesti&#243;n de usuarios con funcionalidades de registro, autenticaci&#243;n y operaciones CRUD. Utiliza bcrypt para asegurar las contraseñas y jsonwebtoken para gestionar tokens de acceso, proporcionando una base s&#243;lida para integrarse con un frontend.

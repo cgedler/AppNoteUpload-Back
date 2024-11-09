@@ -1,3 +1,10 @@
+/**
+ * Service class in charge of the persistence of the users table
+ * 
+ * @author Christopher Gedler <cgedler@gmail.com>
+ * @version 1.0
+ * @since Nov 8, 2024
+ */
 
 
 import logger from '../middleware/logger.js'
