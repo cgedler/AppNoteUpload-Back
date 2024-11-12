@@ -14,10 +14,10 @@ const router = Router();
 import { get, getById, insert, update, eliminate } from '../controllers/section.controller.js';
 
 router.get('/', jwtoken.ensureToken, get);
-router.get('/', jwtoken.ensureToken, getById);
+router.get('/:id', jwtoken.ensureToken, getById);
 router.post('/', jwtoken.ensureToken, insert);
-router.put('/', jwtoken.ensureToken, update);
-router.delete('/', jwtoken.ensureToken, eliminate);
+router.put('/:id', jwtoken.ensureToken, update);
+router.delete('/:id', jwtoken.ensureToken, eliminate);
 
 export default router;
 

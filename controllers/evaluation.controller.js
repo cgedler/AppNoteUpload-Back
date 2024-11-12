@@ -57,7 +57,7 @@ export const eliminate = async (req, res) => {
     try {
         const id = req.params.id; 
         const result = await evaluationService.eliminate(id);
-        return res.sendStatus(204).json({ message: "Was Delete" });      
+        return res.status(204).json({ message: "Was Delete" });      
     } catch (error) {
         logger.error(`Error: ${error}`);
         return res.status(500).json({ message: "Error: " + error.message });  

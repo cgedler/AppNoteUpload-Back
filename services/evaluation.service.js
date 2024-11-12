@@ -13,7 +13,7 @@ import Evaluation from '../models/evaluation.model.js';
 
 
 export async function getAll() {
-    return await User.findAll();
+    return await Evaluation.findAll();
 }
 
 export async function getById(id) {
@@ -21,54 +21,39 @@ export async function getById(id) {
 }
 
 export async function create(params) {
-    if (await User.findOne({ where: { username: params.username } })) {
-        throw 'User :"' + params.username + '" is already registered';
+    if (await Evaluation.findOne({ where: { id: params.id } })) {
+        throw 'Evaluation :"' + params.id + '" is already registered';
     }
-    var password_crypt = '';
-    if (params.password) {
-        var salt = bcrypt.genSaltSync(10);
-        password_crypt = bcrypt.hashSync(params.password, salt);
-    }   
-    const user = new User(params);
-    user.password = password_crypt; 
-    await user.save();
-    return user;
+    const evaluation = new Evaluation(params);
+    await evaluation.save();
+    return evaluation;
 }
 
 export async function update(id, params) {
-    const user_old = await getOne(id);
-    // validate
-    const usernameChanged = params.username && user_old.username !== params.username;
-    if (usernameChanged && await User.findOne({ where: { username: params.username } })) {
-        throw 'Username "' + params.username + '" is already taken';
-    }
-    var password_crypt = '';
-    if (params.password) {
-        var salt = bcrypt.genSaltSync(10);
-        password_crypt = bcrypt.hashSync(params.password, salt);
-    }
-    user_old.username = params.username;
-    user_old.name = params.name;
-    user_old.password = password_crypt;
-    user_old.role = params.role;
-    await user_old.save();
-    return user_old;
+    const evaluation_old = await getOne(id);
+    evaluation_old.date = params.date;
+    evaluation_old.note = params.note;
+    evaluation_old.student = params.student;
+    evaluation_old.teacher = params.teacher;
+    evaluation_old.subject = params.subject;
+    await evaluation_old.save();
+    return evaluation_old;
 }
 
 export async function eliminate(id) {
-    const user = await User.destroy({
+    const evaluation = await Evaluation.destroy({
         where: {
             id
         }
     });
-    if (!user) throw 'User not found';
-    return user;
+    if (!evaluation) throw 'Evaluation not found';
+    return evaluation;
 }
 
 async function getOne(id) {
-    const user = await User.findByPk(id);
-    if (!user) throw 'User not found';
-    return user;
+   const evaluation = await Evaluation.findByPk(id);
+    if (!evaluation) throw 'Evaluation not found';
+    return evaluation;
 }
 
 export default { getAll, getById, create, update, eliminate };

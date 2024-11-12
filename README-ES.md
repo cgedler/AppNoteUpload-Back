@@ -1,8 +1,10 @@
-# Descripci&#243;n del Proyecto
+# AppNoteUpload-Back
 
-## Nombre del Proyecto: API de Gesti&#243;n de carga de notas (AppNoteUpload)
+## Descripci&#243;n general
 
-#### Tecnolog&#237;as Utilizadas:
+### Nombre del Proyecto: API de Gesti&#243;n de Notas de Estudiantes
+
+### Tecnolog&#237;as Utilizadas:
 
 - **Node.js:** Plataforma para construir la aplicaci&#243;n backend.
 
@@ -18,13 +20,13 @@
 
 ## Funcionalidades Principales
 
-1. Registro de Usuarios:
+**1. Registro de Usuarios:**
 
 - Los nuevos usuarios pueden registrarse proporcionando un nombre de usuario y contrase&#241;a.
 
 - La contrase&#241;a se cifra utilizando bcrypt antes de almacenarse en la base de datos para mejorar la seguridad.
 
-2. Autenticaci&#243;n de Usuarios:
+**2. Autenticaci&#243;n de Usuarios:**
 
 - Los usuarios registrados pueden autenticarse proporcionando sus credenciales.
 
@@ -32,7 +34,7 @@
 
 - Este token se utiliza para autorizar el acceso a rutas protegidas en la aplicaci&#243;n frontend.
 
-3. CRUD de Usuarios, Estudiantes, Profesores,Secciones, Asignaturas y Evaluaciones:
+**3. CRUD de Usuarios, Estudiantes, Profesores,Secciones, Asignaturas y Evaluaciones:**
 
 - **Crear:** Permite a&#241;adir nuevos datos a la base de datos.
 
@@ -43,4 +45,9 @@
 - **Eliminar:** Permite borrar informaci&#243;n de la base de datos.
 
 
-Este proyecto representa una API de backend robusta que maneja la gesti&#243;n de usuarios con funcionalidades de registro, autenticaci&#243;n y operaciones CRUD. Utiliza bcrypt para asegurar las contraseñas y jsonwebtoken para gestionar tokens de acceso, proporcionando una base s&#243;lida para integrarse con un frontend.
+> Este proyecto representa una API de backend robusta que maneja la gesti&#243;n de usuarios con funcionalidades de registro, autenticaci&#243;n y operaciones CRUD. Utiliza bcrypt para asegurar las contraseñas y jsonwebtoken para gestionar tokens de acceso, proporcionando una base s&#243;lida para integrarse con un frontend.
+
+# Screenshots
+![page1](docs/images/entitys.svg)
+
+![page1](docs/images/usecase.svg)

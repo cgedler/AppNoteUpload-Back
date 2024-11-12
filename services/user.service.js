@@ -76,16 +76,20 @@ export async function login(params) {
     if (await User.findOne({ where: { username: params.username } })) {
         const user = await User.findOne({ where: { username: params.username } });
         if (params.password) {
-            if (bcrypt.compare(params.password, user.password) ) {
+            const matching = await bcrypt.compare(params.password, user.password);
+            if (matching) {
                 return user;
             } else {
                 throw 'Invalid password';
+                logger.error(`Error: Invalid password`);
             }
         } else {
             throw 'Password is required';
+            logger.error(`Error: Password is required`);
         }
     } else {
         throw 'User :"' + params.username + '" not found';
+        logger.error(`Error: User : ${params.username} not found`);
     }
 }
 

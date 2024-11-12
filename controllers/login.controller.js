@@ -13,7 +13,7 @@ import jwtoken from '../services/jwt.service.js';
 
 export const login = async (req, res) => {
     try {
-        logger.info(`entrando en el comtrolador login`);
+        logger.info(`Inside login controller`);
         const username = req.body.username;
         const password = req.body.password;
         if (validateParam(username) & validateParam(password)) {
